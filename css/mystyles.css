@@ -132,5 +132,12 @@ a.sing:hover{
 }
 .speak{
     color: #395b73;
+    font-size: 16px;
+}
+.learn{
     font-size: 18px;
+}
+.singing{
+    font-size: 16px;
+    color: #395b73;
 }
