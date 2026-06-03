@@ -130,3 +130,7 @@ a.sing:hover{
     background-color: rgba(47, 47, 66, 0.324);
     width: 250px;
 }
+.speak{
+    color: #395b73;
+    font-size: 18px;
+}
