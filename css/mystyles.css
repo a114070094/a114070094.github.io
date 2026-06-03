@@ -141,6 +141,47 @@ a.sing:hover{
     color: #395b73;
 }
 .seango a .fa-chevron-down {
-    color: #cbd3db; /* 更改為你想要的顏色 */
-    transition: color 0.3s ease; /* 讓顏色變換時有平滑漸變效果 */
+    color: #cbd3db; 
+    transition: color 0.3s ease;
+}
+.fa-circle-play{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* 1. 強制讓兩個工作經驗的外框寬度變成 100%，不要互相擠壓 */
+#work .d-flex.flex-column.flex-md-row {
+    width: 100% !important;
+}
+
+#work .flex-grow-1 {
+    width: 100% !important;
+}
+
+/* 2. 強制表格填滿外框，並固定比例 */
+#work .table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+}
+
+/* 3. 精準鎖定三欄的寬度比例（30% : 25% : 45%），文字絕對不切斷 */
+#work .table th:nth-child(1), 
+#work .table td:nth-child(1) {
+    width: 30% !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+#work .table th:nth-child(2), 
+#work .table td:nth-child(2) {
+    width: 25% !important;
+}
+
+#work .table th:nth-child(3), 
+#work .table td:nth-child(3) {
+    width: 45% !important;
+    word-break: break-all !important;
+    white-space: normal !important;
 }
